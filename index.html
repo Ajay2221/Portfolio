@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Noto+Sans:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Madimi+One&family=Noto+Sans:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/17ca6300bc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--Header Start-->
+
+    <div id="header">
+        <div class="container">
+            <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo-white.png" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Contact</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>   -->
+            <nav>
+                <img src="images/logo-white.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Ajay Gandhi</h1>
+                <p>I'm <span class="typed"
+                        data-typed-items="Developer,Designer, Digital-Content Creator, Freelancer, Hiker"></span><span
+                        class="cursor">|</span></p>
+
+                <div class="social-logos">
+                    <!-- Font Awesome icons for social logos -->
+                    <a href="#" class="social-logo"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-logo"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-logo"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/aja00y" class="social-logo"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Header Start-->
+    <!--About Start-->
+
+    <div id="about">
+        <div class="about container">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <div class="profile-img d-grid justify-content-center">
+                                <img class="profile" src="images/Profile.svg">
+
+                            </div>
+                        </div>
+                        <!-- <div class="col">
+                            <div class="vertical-line"></div>
+                        </div> -->
+                    </div>
+
+
+                </div>
+
+
+                <div class="col">
+
+                    <h1 class="sub-title">About</h1>
+                    <p> I am a Freelancer, Web Developer, and Digital Content Creator. Currently, I am pursuing a
+                        Master's in Data Science at Symbiosis College. I have a deep passion for delving into data
+                        analysis. Continuous learning and self-improvement drive my work ethic. Challenges fuel my
+                        motivation, as I constantly seek avenues for personal and professional growth. I am
+                        characterized by enthusiasm, dedication, and a relentless focus on achieving excellence in all
+                        my endeavors </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul class="content">
+                            <li><span>Python | SQL | Excel</span><br> Data Analysis</li>
+                            <li><span>Frontend | Wordpress</span><br>Website Development</li>
+                            <li><span>React | Node JS | Angular</span><br>Website Development</li>
+                            <!-- <li><span></span><br></li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul class="content">
+                            <li><span>Marva.ai - Automation Er</span><br>June - Sept 2023</li>
+                            <li><span>Ideasailor Tech Pvt LTD - Angular Developer </span><br>Mar 2022 - Sep 2022</li>
+                            <li><span>Flexible Softwares - Software Engineer </span><br>Aug 2021 - Feb 2022</li>
+                            <li><span>Trek Panda - Operations Manger | Trek Lead </span><br> Feb 2021 - Present</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul class="content">
+                            <li><span>Master's in Data Science - <br> Symbiosis Skills and Professional University
+                                </span><br> Aug 2022 - Present | Pune </li>
+                            <li><span> Bachelor's in Computer Science - <br> Marathwada Mitra Mandal College
+                                </span><br>Jul 2018 - May 2021 | Pune</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--About End-->
+    <!-- Services Start -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services I Provide</h1>
+            <div class="hr-container">
+                <hr class="sub-hr">
+            </div>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-code" style="color: #fff;"></i>
+                    <h2>Web Design</h2>
+                    <p>Crafting visually stunning and user-friendly websites tailored to your unique brand identity,
+                        ensuring a seamless digital experience for my audience.</p>
+                </div>
+                <div>
+                    <i class="fa fa-image" style="color: #fff;"></i>
+                    <h2>Digital Content Creation</h2>
+                    <p>Captivating your audience with compelling and engaging digital content, including graphics,
+                        videos, and written materials, designed to elevate your online presence.</p>
+                </div>
+                <div>
+                    <i class="fa fa-chart-line" style="color: #fff;"></i>
+                    <h2>Data Analysis and Insights</h2>
+                    <p>Unlocking the power of data to drive informed decision-making, providing actionable insights and
+                        strategic recommendations to optimize business performance.</p>
+                </div>
+                <div>
+                    <i class="fa fa-bolt" style="color: #fff;"></i>
+                    <h2>Project Management</h2>
+                    <p> Project management services to help businesses effectively plan, execute, and deliver projects
+                        on time and within budget.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---- Portfolio  Start ---->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> Client Projects </h1>
+            <div class="hr-container">
+                <hr class="sub-hr">
+            </div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/digital .svg">
+                    <div class="layer">
+                        <h3>Trishul Arts</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem itaque labore quas rerum</p>
+                        <a href="https://trishulartss.com/"><i class="fa fa-external-link-alt"></i> </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/aquila.svg">
+                </div>
+                <div class="work">
+                    <img src="images/vedabace2.svg">
+                </div>
+                <div class="work">
+                    <img src="images/digital .svg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---- Portfolio  End ---->
+    <!---- Contact  Start ---->
+
+    <div id="contact">
+        <div class="container" style="margin-top: 50px;">
+            <div class="row">
+                <div class="col">
+                    <h1 class="sub-title"> Let's Work Together</h1>
+                    <div class="hr-container">
+                        <hr class="sub-hr">
+                    </div>
+                    <p><i class="fa fa-envelope"></i> ajaygandhi528@gmail.com</p>
+                    <p><i class="fa fa-phone"></i> +919921652221</p>
+                    <div class="    ">
+                        <!-- Font Awesome icons for social logos -->
+                        <a href="#" class="social-icons"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icons"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icons"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/aja00y" class="social-icons"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="images/Ajay_Gandhi_CV.pdf" download class="bottom"> Download CV</a>
+                </div>
+
+                <div class="col">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="4" cols="50" placeholder="Type your message here..."
+                            required></textarea>
+                        <button type="submit" class="bottom">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright @ Ajay Gandhi.<i class="fa fa-heart"></i> All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <!---- Contact  End ---->
+
+
+
+    <script>
+        var typedSpan = document.querySelector('.typed');
+
+        // Get the list of items from the data-typed-items attribute
+        var typedItems = typedSpan.dataset.typedItems.split(',');
+
+        // Function to randomly select an item from the list and update the span content
+        function updateTypedText() {
+            var randomIndex = Math.floor(Math.random() * typedItems.length);
+            typedSpan.textContent = typedItems[randomIndex];
+        }
+
+        // Call the function initially
+        updateTypedText();
+
+        // Optionally, you can call the function periodically to update the text
+        setInterval(updateTypedText, 1000); // Update text every 2 seconds
+
+        // About Tab
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+        ////////// Cursor effect /////////////
+        //         document.addEventListener('DOMContentLoaded', function(){
+        //     var typed = new Typed('.typed', {
+        //         strings: ["Developer", "Designer", "Digital-Content Creator", "Freelancer", "Hiker"],
+        //         typeSpeed: 50,
+        //         backSpeed: 30,
+        //         backDelay: 500,
+        //         loop: true,
+        //         showCursor: false,
+        //         onComplete: function(self) {
+        //             self.cursor.remove(); // Remove the cursor after completion
+        //         }
+        //     });
+        // });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- sidebar Menu -->
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+    
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbymVYCUlNBUANfUEiyrqTgmAH-crLp5SzD_AJSC4wG_uKV7MpOe3BiexcxPXhKKNZhS/exec'
+      const form = document.forms['submit-to-google-sheet']
+      
+      form.addEventListener('submit', e =>{
+        e.preventDefault()
+        fetch(scriptURL,{method:'POST',body: new FormData(form)})
+        .then(response => console.log('Success!',response))
+        .catch(error => console.error('Error!', error))
+      })
+
+    </script>
+
+</body>
+</html>
