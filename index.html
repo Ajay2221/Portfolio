@@ -245,7 +245,7 @@
                             required></textarea>
                         <button type="submit" class="bottom">Submit</button>
                     </form>
-                    <span id="msg">Hello</span>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
@@ -337,7 +337,6 @@
         e.preventDefault()
         fetch(scriptURL,{method:'POST',body: new FormData(form)})
         .then(response => {
-
             msg.innerHTML = "Message sent successfully!!"
             setTimeout(function(){
                 msg.innerHTML = ""
